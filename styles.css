@@ -1,0 +1,41 @@
+
+
+table,th,td{
+    border: 2px black solid;
+
+ 
+ 
+}
+
+tr:hover{
+    background-color: lightgray;
+}
+
+th {
+    text-align: left;
+    vertical-align: bottom;
+    background-color: gray;
+	color: white;
+
+}
+
+
+table{
+    border-collapse: collapse;
+    height: fit-content;
+    width: max-content;
+}
+
+td{
+    vertical-align: bottom;
+    text-align: center;
+}
+
+th,td{
+    padding: 6px;
+}
+
+.button-group{
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
