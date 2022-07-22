@@ -39,3 +39,9 @@ th,td{
     margin-top: 0em;
     margin-bottom: 1em;
 }
+
+.button{
+    color: red;
+    font-size: 30px;
+    border-radius: 8px;
+}

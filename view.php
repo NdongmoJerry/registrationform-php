@@ -1,6 +1,20 @@
 <?php
 
 include('config.php');
+$id = $_GET['id'];
+
+$sql = "SELECT * FROM registration WHERE id = $id";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+//print_r($row);
+$name = $row['name'];
+$email = $row['email'];
+$number = $row['number'];
+$role = $_POST['role'];
+$referer = $_POST['referer'];
+$mostlike = $_POST['mostlike'];
+$improve = $_POST['improve'];
+$comment = $_POST['comment'];
 ?>
 
 
@@ -18,7 +32,9 @@ include('config.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
+
 <body>
+   
 
     <table>
         <tr>
@@ -33,17 +49,10 @@ include('config.php');
             <th>comment</th>
             <th>Actions</th>
 
-        </tr>
-        <?php
 
-    $sql = "SELECT * FROM registration;";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
-    if ($resultCheck > 0) {
-        while ($row = mysqli_fetch_assoc($result)){
-    ?>
+
         <tr>
-            <td><?php echo $row['id']; ?></td>
+          
             <td><?php echo $row['name']; ?></td>
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['number']; ?></td>
@@ -52,23 +61,10 @@ include('config.php');
             <td><?php echo $row['mostlike']; ?></td>
             <td><?php echo $row['improve']; ?></td>
             <td><?php echo $row['comment']; ?></td>
-            <td>
-                <a href="view.php?id=<?php echo $row["id"]; ?>" class='btn btn-info btn-sm'>View</a>
-                <a href="edit.php?id=<?php echo $row["id"]; ?>" class='btn btn-success btn-sm'>Edit</a>
-                <a href="delete.php?id=<?php echo $row["id"]; ?>" class='btn btn-danger btn-sm'>Delete</a>
-            </td>
-
-        </tr>
-
-        <?php
-        }
-    }
-        ?>
-
-        <div>
-
-            <a href='registration.php' class='btn btn-primary btn-sm'> &lt; Back </a>
-        </div>
+</tr>
+<div>
+            <a href='reglist.php' class='btn btn-primary btn-sm'> &lt; Back </a>
+            </div>
     </table>
 </body>
 
