@@ -54,6 +54,38 @@ $comment = $_POST['comment'];
             <td><?php echo $row['number']; ?></td>
 
         </tr>
+
+        <tr>
+            <br>
+            <td><b>role</b></td>
+            <td><?php echo $row['role']; ?></td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><b>referer</b></td>
+            <td><?php echo $row['referer']; ?></td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><b>mostlike</b></td>
+            <td><?php echo $row['mostlike']; ?></td>
+
+        </tr>
+
+        <br>
+        <tr>
+            <td><b>improve</b></td>
+            <td><?php echo $row['improve']; ?></td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><b>comment</b></td>
+            <td><?php echo $row['comment']; ?></td>
+
+        </tr>
     </div>
 
 

@@ -17,7 +17,6 @@ $mostlike = $_POST['mostlike'];
 $improve = $_POST['improve'];
 $comment = $_POST['comment'];
 
-
 ?>
 
 
@@ -87,8 +86,7 @@ $comment = $_POST['comment'];
                 <p>What would you like to see improved?</p>
                 <label><input type="checkbox" name="improve" value="Font-end Project">Front-end Projects</label>
                 <label><input type="checkbox" name="improve" value="Back-end Project">Back-end Projects</label>
-                <label><input type="checkbox" name="improve" value="Data Visualisation">Data
-                    Visualization</label>
+                <label><input type="checkbox" name="improve" value="Data Visualisation">Data Visualization</label>
                 <label><input type="checkbox" name="improve" value="Chalengies">Challengies</label>
             </div>
             <div class="form-group"></div>
@@ -99,9 +97,11 @@ $comment = $_POST['comment'];
         <button type="submit" name="submit" class="submit-button">Submit</button>
 
     </div>
-  
+
     </form>
     </div>
 </body>
+
+</html>
 
 </html>
