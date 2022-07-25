@@ -9,7 +9,7 @@ $row = mysqli_fetch_assoc($result);
 //print_r($row);
 $name = $row['name'];
 $email = $row['email'];
-$number = $row['number'];
+$age = $row['age'];
 $role = $_POST['role'];
 $referer = $_POST['referer'];
 $mostlike = $_POST['mostlike'];
@@ -40,49 +40,49 @@ $comment = $_POST['comment'];
     <a href='reglist.php' class='btn btn-primary btn-sm'> &lt; Back </a>
     <div class="table-form">
         <tr>
-            <td><b>name</b></td>
+            <td><b>Name:</b></td>
             <td><?php echo $row['name']; ?></td>
         </tr>
         <br>
         <tr>
-            <td><b>email</b></td>
+            <td><b>Email:</b></td>
             <td><?php echo $row['email']; ?></td>
         </tr>
         <br>
         <tr>
-            <td><b>number</b></td>
+            <td><b>Age:</b></td>
             <td><?php echo $row['number']; ?></td>
 
         </tr>
 
         <tr>
             <br>
-            <td><b>role</b></td>
+            <td><b>Role:</b></td>
             <td><?php echo $row['role']; ?></td>
 
         </tr>
         <br>
         <tr>
-            <td><b>referer</b></td>
+            <td><b>Referer:</b></td>
             <td><?php echo $row['referer']; ?></td>
 
         </tr>
         <br>
         <tr>
-            <td><b>mostlike</b></td>
+            <td><b>Mostlike:</b></td>
             <td><?php echo $row['mostlike']; ?></td>
 
         </tr>
 
         <br>
         <tr>
-            <td><b>improve</b></td>
+            <td><b>Improve:</b></td>
             <td><?php echo $row['improve']; ?></td>
 
         </tr>
         <br>
         <tr>
-            <td><b>comment</b></td>
+            <td><b>Comment:</b></td>
             <td><?php echo $row['comment']; ?></td>
 
         </tr>

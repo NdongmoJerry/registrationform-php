@@ -15,7 +15,7 @@ $role = $_POST['role'];
 $referer = $_POST['referer'];
 $mostlike = $_POST['mostlike'];
 $improve = $_POST['improve'];
-$comment = $_POST['comment'];
+$comment = $row['comment'];
 
 ?>
 
@@ -44,16 +44,17 @@ $comment = $_POST['comment'];
                 <input type="hidden" name="id" value="<?php echo $id;?>">
             </div>
             <div class=" form-group">
-                <label>name</label><input type="text" name="name" class="form-control" value="<?php echo $name;?>"
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" value="<?php echo $name;?>"
                     placeholder="Enter your name" required>
             </div>
             <div class="form-group">
-                <label>email</label><input type="email" name="email" class="form-control" value=" 
+                <label>Email</label><input type="email" name="email" class="form-control" value=" 
                     <?php echo $email;?>" placeholder=" Enter your email" required>
             </div>
             <div class="form-group">
-                <label name="number">number</label><input type="number" name="number" class="form-control"
-                    value="<?php echo $number;?>" min="13" max="99" placeholder="Age" required>
+                <label name="number">Age</label><input type="number" name="number" class="form-control"
+                    value="<?php echo $number;?>" min="13" max="99" placeholder="Enter your age" required>
             </div>
             <div class="form-group">
                 <p>Which option best discribes your current role</p>
@@ -89,16 +90,18 @@ $comment = $_POST['comment'];
                 <label><input type="checkbox" name="improve" value="Data Visualisation">Data Visualization</label>
                 <label><input type="checkbox" name="improve" value="Chalengies">Challengies</label>
             </div>
-            <div class="form-group"></div>
-            <p>Any comments or suggestions?</p>
-            <textarea name="comment" id="comment" value="comment" placeholder="comment here"></textarea>
-    </div>
-    <div class="form-group" id="button">
-        <button type="submit" name="submit" class="submit-button">Submit</button>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
 
-    </div>
+                <textarea id="comment" class="form-control" name="comment" value="<?php echo $comment;?>"
+                    placeholder="Enter your comment here"></textarea>
+            </div>
+            <div class="form-group" id="button">
+                <button type="submit" name="submit" class="submit-button">Submit</button>
 
-    </form>
+            </div>
+
+        </form>
     </div>
 </body>
 

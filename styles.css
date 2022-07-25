@@ -7,32 +7,22 @@ table,th,td{
  
 }
 
-tr:hover{
+tr:hover {
     background-color: lightgray;
 }
 
-th {
-    text-align: left;
-    vertical-align: bottom;
+th{
+    text-align: center;
     background-color: gray;
-	color: white;
+    color: white;
+   
 
 }
 
-
-table{
-    border-collapse: collapse;
-    height: fit-content;
-    width: max-content;
-}
 
 td{
     vertical-align: bottom;
     text-align: center;
-}
-
-th,td{
-    padding: 6px;
 }
 
 .button-group{
@@ -40,7 +30,12 @@ th,td{
     margin-bottom: 1em;
 }
 
-
+.box {
+    
+       margin-left: 3%;
+       
+     
+}
 
 
 .table-form {

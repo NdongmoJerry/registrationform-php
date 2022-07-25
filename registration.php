@@ -49,18 +49,18 @@ if(isset($_POST['submit'])){
         </header>
         <form method="POST" action="">
             <div class="form-group">
-                <label>name</label><input type="text" name="name" class="form-control" placeholder="Enter your name"
+                <label>Name</label><input type="text" name="name" class="form-control" placeholder="Enter your name"
                     required>
             </div>
             <div class="form-group">
-                <label>email</label><input type="email" name="email" class="form-control" placeholder="Enter your email"
-                    required>
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label name="number">number</label><input type="number" name="number" class="form-control" min="13"
-                    max="99" placeholder="Age" required>
+                <label>Age</label><input type="number" name="number" class="form-control" min="13" max="99"
+                    placeholder="Enter your age" required>
             </div>
-            <div class="form-group">
+            <div class=" form-group">
                 <p>Which option best discribes your current role</p>
                 <select class="form-control" name="role" id="dropdown" required>
                     <option disabled selected value>Select current role</option>
@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="form-group"></div>
             <p>Any comments or suggestions?</p>
-            <textarea name="comment" id="comment" value="comment" placeholder="comment here"></textarea>
+            <textarea name="comment" id="comment" value="comment" placeholder="Enter your comment here"></textarea>
     </div>
     <div class="form-group" id="button">
         <button type="submit" name="submit" class="submit-button">Submit</button>

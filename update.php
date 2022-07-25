@@ -10,11 +10,7 @@
     $improve = $_POST['improve'];
     $comment = $_POST['comment'];
   
-    $host= "localhost";
-    $dbname= "input";
-    $username="root";
-    $password="";
-    $conn = mysqli_connect($host, $username, $password, $dbname);
+    include('config.php');
     $sql = "UPDATE registration SET name='$name', email='$email', number='$number', role='$role', referer='$referer', mostlike='$mostlike', improve='$improve', comment='$comment'  WHERE id=$id";
     $update = mysqli_query($conn, $sql);
     if($update){

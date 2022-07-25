@@ -20,20 +20,22 @@ include('config.php');
 
 <body>
 
-    <table>
+    <table class="box">
+
         <tr>
             <th>id</th>
-            <th>name</th>
-            <th>email</th>
-            <th>number</th>
-            <th>role</th>
-            <th>referer</th>
-            <th>mostlike</th>
-            <th>improve</th>
-            <th>comment</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Referer</th>
+            <th>Mostlike</th>
+            <th>Improve</th>
+            <th>Comment</th>
             <th>Actions</th>
 
         </tr>
+
         <?php
 
     $sql = "SELECT * FROM registration;";
@@ -69,6 +71,7 @@ include('config.php');
 
             <a href='registration.php' class='btn btn-primary btn-sm'> &lt; Back </a>
         </div>
+
     </table>
 </body>
 
