@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="registration.css" type="text/css">
     <title>Survey Form</title>
 </head>
 
@@ -107,3 +107,4 @@ if(isset($_POST['submit'])){
 </body>
 
 </html>
+Footer

@@ -120,7 +120,7 @@ input, button, select, textarea {
     padding: 0.375rem 0.75rem;
     color: #495057;
     background-color: #fff;
-    background-clip: padding-box;
+    
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -151,7 +151,7 @@ input {
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    appearance: auto;
+   
     -webkit-rtl-ordering: logical;
     cursor: text;
     background-color: field;
@@ -206,7 +206,7 @@ div {
 input[type="radio" i] {
     background-color: initial;
     cursor: default;
-    appearance: auto;
+   
     box-sizing: border-box;
     margin: 3px 3px 0px 5px;
     padding: initial;
@@ -216,7 +216,7 @@ input[type="radio" i] {
 input[type="checkbox" i] {
     background-color: initial;
     cursor: default;
-    appearance: auto;
+
     box-sizing: border-box;
     margin: 3px 3px 3px 4px;
     padding: initial;
@@ -228,12 +228,13 @@ input[type="checkbox" i] {
     color: inherit;
     border-radius: 2px;
     cursor: pointer;
-    width: 20em;
+    width: 21em;
     height: 2em;
     font-size: 25px;
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem; 
 }
+
 #button{
     text-align: center;
     border: none;
@@ -244,8 +245,5 @@ input[type="checkbox" i] {
     padding: 0.25rem; 
     width: 32.5em;
 }
-
-
-
 
 
