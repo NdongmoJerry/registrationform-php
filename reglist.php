@@ -57,7 +57,9 @@ include('config.php');
             <td>
                 <a href="view.php?id=<?php echo $row["id"]; ?>" class='btn btn-info btn-sm'>View</a>
                 <a href="edit.php?id=<?php echo $row["id"]; ?>" class='btn btn-success btn-sm'>Edit</a>
-                <a href="delete.php?id=<?php echo $row["id"]; ?>" class='btn btn-danger btn-sm'>Delete</a>
+                <a href="delete.php?id=<?php echo $row["id"]; ?>"
+                    onclick="return confirm('Are you sure you want to delete this item')"
+                    class='btn btn-danger btn-sm'>Delete</a>
             </td>
 
         </tr>
